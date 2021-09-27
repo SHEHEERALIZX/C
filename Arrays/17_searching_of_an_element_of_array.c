@@ -2,30 +2,32 @@
 
 #include<stdio.h>
 int main(){
-    int limit,arr[10],searchkey,pos,flag=0;
+    int limit,arr[10],searchkey,pos;
+    printf("Enter the limit : ");
+
     scanf("%d",&limit);
 
     for (int i = 0;i<limit;i++)
     {
+        printf("Enter the %d number : ",i+1);
         scanf("%d",&arr[i]);
     }
+    printf("Enter the Search Value :");
+
     scanf("%d",&searchkey);
     for (int i = 0;i<limit;i++)
     {
         if(arr[i]==searchkey)
         {
             pos = i+1;
-            flag=1;
-            break;
+            printf("The element is present in the array and its position is %d",pos);
+            return 0;
         }
    
     }
-    if(flag==1){
-        printf("The element is present in the array and its position is %d",pos);
-    }  else{
-        printf("The element is not present in the array");
 
-    }
-     return 0;
+    printf("The element is not present in the array");
+
+    return 0;
 
 }

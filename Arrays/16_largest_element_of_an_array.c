@@ -3,10 +3,14 @@
 #include<stdio.h>
 int main(){
     int limit,arr[10];
+    printf("Enter the limit : ");
+
     scanf("%d",&limit);
 
     for (int i = 0;i<limit;i++)
+
     {
+        printf("Enter the %d number : ",i+1);
         scanf("%d",&arr[i]);
     }
 
@@ -17,7 +21,7 @@ int main(){
             arr[0]=arr[i];
         }
     }
-    printf("%d",arr[0]);
+    printf("Largest number is : %d\n",arr[0]);
 
     return 0;
 

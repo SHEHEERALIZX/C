@@ -37,7 +37,9 @@ int main()
         break;
         
         default :
-        printf("You fool choose a number between 1 - 7");
+        printf("You fool choose a number between 1 - 7\n");
+
+
         break;
     }
     return 0;
